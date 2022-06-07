@@ -1,35 +1,57 @@
-## All Outcomes for COD Champs
+<!DOCTYPE html>
 
-With 1 major to go before COD champs, here are all the different outcomes that the standings can turn out.
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-### Markdown
+	<title>The 4096 Ends of MSI</title>
+	<meta property="og:title" content="The 4096 Ends of MSI">
+  <meta property="og:url" content="https://rocket3989.github.io/msi-2021/">
+  <meta property="og:image" content="https://i.imgur.com/zRCfKVo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
+    <link rel="shortcut icon" href="./favicon.ico"/>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:700,500' rel='stylesheet' type='text/css'>  
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div class='header'>
+    <div class='header-left'>
+      <button onClick = changeColor() style="cursor: pointer">Color Blind</button>
+      <button onClick = changeSeed() style="cursor: pointer">View Seeds</button>    
+    </div>
+    <div class='header-right'>
+      <span>Adam & Collin Pearce</span>
+      
+    </div>
+  </div>
+  
+  <h1>The 4096 Ends of MSI</h1>
+  <!-- <time>2018-05-13</time> -->
+  <p>
+      With 12 games left, there are 2<sup>12</sup>, or 4096 different ways group play can end at the <a href="https://lolesports.com/standings/msi/msi_2022/round_2">League of Legends Mid-Season Invitational</a>. Three colors are used on the 4096 small squares to represent possible ends for a team in group stage- <span style="color:#4CAF50">green</span> for advancement, <span style="color:#FF9800">orange</span> for tiebreaker, and <span style="color:#F44336">red</span> for elimination.
+  </p>
+  <p>
+      There are 6 grids below, one for each team in the group stage - <span class=' team-inline'>RNG, T1, G2, EG, PSG, SGB</span>. Each grid is divided into 16, representing the 4 games the <span class='active-team'>hovered team</span> plays. Notice that in most cases, there is variance within these divisions, indicating that results from games outside of the control of the <span class='active-team'>hovered team</span> could determine if they advance or not.
+  </p>
+    <p>Click a match on the left to see which advancement scenarios will still be possible after the game. The bars below each show how the result impacts the <span class='active-team'>hovered team’s</span> advancement scenarios; <span class='active-team team-inline'>RNG</span> fans should cheer for <span class=team-inline>G2</span> in their game against <span class=team-inline>PSG</span> to improve their team's chance of advancement.
+  </p>
+  <p>
+      Click directly on a square to select the matches that lead to that specific outcome, and click on more to select the matches that lead to all the outcomes you picked. To reset the grids, click on any already selected square
+  </p>
+<div id='container'>
+    <div id='games'></div>
+    <div id='graph'>
+    </div>
+</div>
 
-```markdown
-Syntax highlighted code block
+<script src='https://roadtolarissa.com/worlds-group-2017/d3_.js'></script>
+<script src='./graph-scroll.js'></script>
+<script src='./script.js'></script>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TomGallagher1818/CodOutcomes/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
