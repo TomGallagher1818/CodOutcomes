@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## All Outcomes for COD Champs
 
-You can use the [editor on GitHub](https://github.com/TomGallagher1818/CodOutcomes/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+With 1 major to go before COD champs, here are all the different outcomes that the standings can turn out.
 
 ### Markdown
 
