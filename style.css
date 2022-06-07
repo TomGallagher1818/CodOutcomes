@@ -7,6 +7,10 @@ html{
 	width: 780px;
 	/*overflow-x: hidden;*/
   }
+
+  td, th {
+      border: 1px solid #cccc
+  }
   
   #container{
 	margin: 0px auto;
