@@ -13,7 +13,7 @@
   <h1>Possible Outcomes for COD Champs</h1>
 
   <p>
-      With 1 major left, there are a bunch of different ways the <a href="https://callofdutyleague.com/en-us/standings">COD league standings</a> can end.
+      With 1 major left, there are a bunch of different ways the <a href="https://callofdutyleague.com/en-us/standings">COD league standings</a> can end. Here's a look at the current standings.
   </p>
 
   <table>
@@ -21,14 +21,188 @@
           <tr>
               <th>Team</th>
               <th>Points</th>
+              <th>MW</th>
+              <th>ML</th>
+              <th>MW%</th>
+              <th>GW</th>
+              <th>GL</th>
+              <th>GW%</th>
           </tr>
       </thead>
-      <tbody id = "TableData">
+      <tbody id = "teamData">
 
       </tbody>
   </table>
+  
+  <p>
+    I've made an interactable bracket that updates the above table, so you can check to see how each team's performance at the major affect their standings. Hope you enjoy. (Note: the first two tiebreaker rules according to CDL are 
+    head-to-head match win percentage and head-to-head game win percentage. I couldn't be bothered getting this info so if 2 or more teams are even in points, whoever is higher in the current CDL standings will be higher in the new table).
+  </p>
 
-  <script src='index.js'></script>
-
+  <div class = "bracket">
+      <div class = "round1">
+          <h3>
+            Winners Round 1
+        </h3>
+          <div id = "match1" class = "match">
+            <div id = "team1" class = "team">
+                <select class = "score" id="match1Ascore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id = "team8" class = "team">
+                <select class = "score" id="match1Bscore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+          </div>
+          <div id = "match2" class = "match">
+            <div id = "team4" class = "team">
+                <select class = "score" id="match2Ascore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id = "team5" class = "team">
+                <select class = "score" id="match2Bscore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+          </div>
+          <div id = "match3" class = "match">
+            <div id = "team2" class = "team">
+                    <select class = "score" id="match3Ascore">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+            </div>
+            <div id = "team7" class = "team">
+                <select class = "score" id="match3Bscore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+          </div>
+          <div id = "match4" class = "match">
+            <div id = "team3" class = "team">
+                <select class = "score" id="match4Ascore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id = "team6" class = "team">
+                <select class = "score" id="match4Bscore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+          </div>
+          <h3>
+            Losers Round 1
+        </h3>
+          <div id = "match5" class = "match">
+            <div id = "match1loser" class = "team">
+                <select class = "score" id="match5Ascore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id = "team9" class = "team">
+                <select class = "score" id="match5Bscore">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                </select>
+            </div>
+          </div>
+          <div id = "match6" class = "match">
+            <div id = "match2loser" class = "team">
+                <select class = "score" id="match6Ascore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id = "team12" class = "team">
+                <select class = "score" id="match6Bscore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+          </div>
+          <div id = "match7" class = "match">
+            <div id = "match3loser" class = "team">
+                <select class = "score" id="match7Ascore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id = "team10" class = "team">
+                <select class = "score" id="match7Bscore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+          </div>
+          <div id = "match8" class = "match">
+            <div id = "match4loser" class = "team">
+                <select class = "score" id="match8Ascore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id = "team11" class = "team">
+                <select class = "score" id="match8Bscore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+          </div>
+      </div>
+      
+        <div class = "round2">
+            <h3>
+                Winners Round 2
+            </h3>
+            <div id = "match9" class = "match2">
+                <div id = "match1winner" class = "team">
+                    <select class = "score" id="match9Ascore">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div id = "match2winner" class = "team">
+                    <select class = "score" id="match9Bscore">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+        </div>
+        <div class = "round3">
+            round3
+        </div>
+  </div>
 </body>
+
+<script src="main.js"></script>
+
 </html>
